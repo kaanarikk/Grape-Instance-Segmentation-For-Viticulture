@@ -9,3 +9,5 @@ Participants must use the FGVL Dataset to develop deep learning models for insta
 You are free to use any image processing or deep learning framework (e.g., YOLOv11, PyTorch, TensorFlow) and apply data augmentation, model tuning, and evaluation techniques.
 
 Submissions will be evaluated based on mAP@50 and mAP@50-95 metrics on the test set.
+
+https://ieee-dataport.org//documents/frost-damaged-leaf-and-grape
