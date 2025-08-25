@@ -10,4 +10,4 @@ You are free to use any image processing or deep learning framework (e.g., YOLOv
 
 Submissions will be evaluated based on mAP@50 and mAP@50-95 metrics on the test set.
 
-https://ieee-dataport.org//documents/frost-damaged-leaf-and-grape
+Access the dataset: https://ieee-dataport.org//documents/frost-damaged-leaf-and-grape
