@@ -32,7 +32,7 @@ import torch.nn as nn
 from ultralytics import YOLO
 from ultralytics.nn.modules.block import C2f
 
-# ===== ASPP Modüle =====
+# ===== ASPP Module =====
 class ASPP(nn.Module):
     def __init__(self, in_channels, out_channels=256, atrous_rates=[6, 12, 18]):
         super().__init__()
@@ -88,7 +88,7 @@ def integrate_aspp_to_yolo(yolo_model, aspp_channels=256):
     last_c2f = layers[last_c2f_idx]
     out_channels = last_c2f.cv2.conv.out_channels
     layers.insert(last_c2f_idx + 1, ASPP(out_channels, aspp_channels))
-    print(f"✅ ASPP eklendi: {last_c2f_idx+1} index, in_channels={out_channels}, out_channels={aspp_channels}")
+    print(f"✅ ASPP added: {last_c2f_idx+1} index, in_channels={out_channels}, out_channels={aspp_channels}")
     return yolo_model
 
 # ===== Main =====
