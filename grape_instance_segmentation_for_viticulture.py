@@ -88,7 +88,7 @@ def integrate_aspp_to_yolo(yolo_model, aspp_channels=256):
     last_c2f = layers[last_c2f_idx]
     out_channels = last_c2f.cv2.conv.out_channels
     layers.insert(last_c2f_idx + 1, ASPP(out_channels, aspp_channels))
-    print(f"✅ ASPP added: {last_c2f_idx+1} index, in_channels={out_channels}, out_channels={aspp_channels}")
+    print(f"ASPP added: {last_c2f_idx+1} index, in_channels={out_channels}, out_channels={aspp_channels}")
     return yolo_model
 
 # ===== Main =====
@@ -105,7 +105,7 @@ def main():
         epochs=25,
         imgsz=640,
         batch=16,
-        project='YOLOv8s_ASPP_InstSeg',
+        project='YOLOv11s_ASPP_InstSeg',
         name='exp1',
         device=device,
         exist_ok=True,
