@@ -23,16 +23,6 @@ Domain: Precision Agriculture, Computer Vision, Deep Learning
 Purpose: To support instance-based segmentation of frost-damaged and healthy grape leaves and clusters using YOLO-based models, particularly YOLOv11s+ASPP.
 Licensing: Academic use only (please cite the associated IEEE Access paper).
 
-This dataset was collected in April 2025 after a severe frost event in Manisa, Turkey. It contains high-resolution, pixel-level labeled images of grapevine leaves and grape clusters categorized into four classes:
-
-Frozen Grape
-
-Frozen Leaf
-
-Healthy Grape
-
-Healthy Leaf
-
 2. Data Structure
 Total Images (after preprocessing): ~1100
 Image Format: JPEG (.jpg), 24-bit color
